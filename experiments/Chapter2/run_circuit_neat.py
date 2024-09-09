@@ -21,6 +21,7 @@ from arguments.circuit_neat import get_args
 
 def main():
     args = get_args()
+    #以降、コマンド入力で変更できる値は.argsで与えられる値のみ
 
     save_path = os.path.join(CURR_DIR, 'out', 'circuit_neat', args.name)
 
