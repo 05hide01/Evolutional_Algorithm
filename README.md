@@ -91,8 +91,3 @@ $ conda env create -f environment.yml
    ```
    pip install --no-deps -r requirements-extra.txt
    ```
-
-これで環境構築は終わりです。
-
-|*注意*：<br>Evolution Gymのインストールの際、プラットフォームによってはエラーが出ることがあります。その際は、こちらのURLをお使いください。<br>https://github.com/oreilly-japan/evogym|
-|:-|
