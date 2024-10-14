@@ -21,11 +21,6 @@ https://evolutiongym.github.io/tutorials/getting-started.html
 
 ### PythonとAnaconda
 
-サンプルプログラムはPythonで実装されています。また本書で使用しているEvolution
-Gym 1.0はPython 3.8をサポートしています。そのため本書でも、Python 3.8を使用しま
-す。Python 3.8のインストール方法については割愛します。またAnacondaを使用します
-が、Anacondaのインストール方法については割愛します。
-
  - Python：https://www.python.org/downloads/
  - Anaconda：https://docs.anaconda.com/
 
@@ -34,28 +29,9 @@ Gym 1.0はPython 3.8をサポートしています。そのため本書でも、
 サンプルプログラムではEvolution Gymを使います。Evolution Gymはシミュレーショ
 ンの結果を表示するためにOpenGLを使用し、インストール時にシミュレータをビルドし
 ます。ビルドには追加のライブラリが必要になります。
-
-#### Windows
-
-Windowsでは事前にGitとVisual Studioをインストールする必要があります。依存ラ
-イブラリをインストールするには `winget` コマンドを用います。
-
-```
-$ winget install cmake
-```
-
-その後、`conda` コマンドでEvolution Gymをインストールします。
-
-```
-$ git clone --recurse-submodules https://github.com/EvolutionGym/evogym.git
-$ cd evogym
-$ conda env create -f environment.yml
-```
-
 #### GNU/Linux（例としてUbuntu）
 
-GNU/Linuxの例としてUbuntuでの環境の構築方法を説明します。Ubuntuではaptコ
-マンドを用いて依存ライブラリをインストールします。
+Ubuntuではaptコマンドを用いて依存ライブラリをインストールします。
 
 ```
 $ apt install cmake glfw
@@ -110,7 +86,7 @@ $ conda env create -f environment.yml
    pip install -r requirements.txt
    ```
 
-   本書で使用する依存パッケージの中に、以前のバージョンのライブラリを期待しているものがあります。ただしパッケージの状態により、依存パッケージの依存パッケージがインストールできない状態になっています。そのため `--no-deps` を指定してインストールします。
+   以前のバージョンのライブラリを期待しているものがあります。ただしパッケージの状態により、依存パッケージの依存パッケージがインストールできない状態になっています。そのため `--no-deps` を指定してインストールします。
 
    ```
    pip install --no-deps -r requirements-extra.txt
